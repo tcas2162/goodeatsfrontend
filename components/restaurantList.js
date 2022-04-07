@@ -36,6 +36,7 @@ function RestaurantList(props) {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>ERROR</p>;
   if (!data) return <p>Not found</p>;
+  console.log(data.restaurants)
   console.log(`Query Data: ${data.restaurants}`)
 
 

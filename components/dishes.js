@@ -12,6 +12,7 @@ import {
   Row,
   Col} from "reactstrap";
 function Dishes({restId}){
+  console.log(restId)
   const [restaurantID, setRestaurantID] = useState()
   const {addItem, user} = useContext(AppContext)
 
@@ -44,9 +45,7 @@ const GET_RESTAURANT_DISHES = gql`
   if (!data) return <p>Not found</p>;
 
   let restaurant = data.restaurant;
-
-  if (restId > 0){
-
+  if (parseInt(restId) > 0){
     return (
       <>
           {restaurant.dishes.map((res) => (
@@ -77,7 +76,7 @@ const GET_RESTAURANT_DISHES = gql`
         </>
         )}
         else{
-          return <h1> No Dishes</h1>
+         return <h1> No Dishes</h1>
         }
     }
     export default Dishes
