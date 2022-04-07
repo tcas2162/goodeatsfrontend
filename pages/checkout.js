@@ -16,7 +16,7 @@ function Checkout() {
   
   // load stripe to inject into elements components
   const stripePromise = loadStripe(
-    "pk_test_51Kgx0UFS0caT43EOkkFIcg6CGwTrQpRsIZ3h7mEgKBKPG9Ch63im0WT2CBMN20DrdWlwgC951yEbZZSZBNA2nbcO004v7RYjFC"
+    "pk_test_51HaLhVGgpfLkdZwmHVQcCOdUzwLWqV7umg9EbicemJqLOcLBPDrPtszruyxf4UzqH0lKwaNj5se3tHldNx92nPjI00Zoi8VgBN"
   );
 
   return (
